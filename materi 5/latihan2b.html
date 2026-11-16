@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Responsif Flex</title>
+
+    <style>
+        #wrapper {
+            margin: auto;
+            width: 100%;
+        }
+
+        #header {
+            height: 150px;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
+        #nav {
+            margin: auto;
+            padding: 20px;
+            border: 2px solid red;
+        }
+        
+        .container-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            height: 120px;
+            background-color: red;
+            border: 2px solid red;
+        }
+
+        #footer {
+            padding: 20px;
+            height: 120px;
+            border: 2px solid red;
+        }
+
+        /* Layar maksimal 1080px */
+        @media only screen and (max-width: 1080px) {
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+
+        /* Layar maksimal 640px */
+        @media only screen and (max-width: 640px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <h2>Header</h2>
+        </div>
+
+        <div id="nav">
+            <h2>Services</h2>
+
+            <div class="container-box">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+                <div class="box">Box 4</div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h2>Footer</h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
