@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card border-0 rounded-4 text-center"
+             style="max-width: 700px; width: 100%;">
+            <div class="card-body">
+                <h1 class="fw-bold text-primary mb-3" id="namaMember">
+                    Selamat Datang, Member!
+                </h1>
+                <p class="text-secondary mb-4">
+                    Silakan masukkan nama untuk menjadi member kami.
+                </p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btn-lg" onclick="gantiNama(event)">
+                        Masukkan Nama
+                    </button>
+                    <button class="btn btn-outline-danger btn-lg"
+                            onclick="hapusNama(event)">
+                        Hapus Nama
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const namaMember = document.querySelector('h1');
+        const namaTersimpan = localStorage.getItem('nama');
+        if (namaTersimpan) {
+            namaMember.innerHTML = 'Hello' + namaTersimpan + '!';
+        }
+        function gantiNama(e) {
+            let nama = prompt('Masukkan boleh kosong!');
+            if (nama && nama.trim() !== ""){
+                localStorage.setItem('nama', nama);
+                namaMember.innerHTML = 'Halo ' + nama + '!'
+            } else {
+                alert('Nama tidak boleh kosong!');
+            }
+            e.preventDefault();
+        }
+        function hapusNama(e) {
+            localStorage.removeItem('nama');
+            namaMember.innerHTML = 'Selamat Datang, Member!';
+            alert('Nama berhasil dihapus!');
+            e.preventDefault();
+        }
+    </script>
+</body>
+</html>
