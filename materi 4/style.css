@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+
+.header {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: justify;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.menu {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 25px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.content {
+    padding: 30px;
+    min-height: 1000px;
+}
