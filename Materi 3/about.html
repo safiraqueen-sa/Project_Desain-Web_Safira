@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: bisque;
+            list-style-type: none;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display:grid;
+            color: rgb(151, 100, 34);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: rgb(90, 219, 219);
+        }
+        li a.active { background-color: rgb(58, 160, 160); color: white;
+        }
+        .main-content {
+        margin: 10px;
+        padding: 30px;
+        background: #bedef7;
+        grid-column: 4 / span 9;
+        background-image: url(1.jpeg);
+        background-position: center 57%;
+        background-size: cover;
+        border-radius: 15px;
+
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        }
+        .main-content img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 70%;
+        flex-shrink: 0;
+        }
+
+        .main-content .text {
+        flex: 1;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.6;
+        }
+        .haki{
+            background-color: rgb(89, 190, 190);
+            padding: 20px;
+            color:aliceblue;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="latihan2.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Portofolio.html">Portofolio</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="main-content">
+        <img src="safira.jpeg">
+        <div class="text">
+            <h3>Halo Saya Safira</h3>
+            <p>biasa dipanggil Fira. Saya berasal dari Ponorogo. Saya merupakan lulusan dari SMKN 1 JENANGAN, jurusan RPL.
+
+                    Saat ini, saya sedang menempuh pendidikan di UNS tepatnya di Fakultas Keguruan dan Ilmu Pendidikan Program Studi PTIK.
+                    Saya merupakan mahasiswa semester 3.
+                    <br>
+                    Saya memilih Program Studi PTIK karena saya ingin melanjutkan studi saya di ranah informatika. Selama menjalani perkuliahan,
+                    saya mulai tertarik dengan bidang desain website dan sedang mengembangkan kemampuan dalam membuat tampilan web.
+                    <br>
+                    Selain kegiatan akademik, saya juga mengikuti beberapa kegiatan diluar PTIK seperti seni tari dan karawitan serta mengikuti
+                    beberapa volunteer untuk lebih dalam mengeksplore hal-hal yang ada di UNS. Dari berbagai kegiatan tersebut, saya mendapatkan
+                    pengalaman dalam mengembangkan skill komunikasi, bertanggung jawab dalam menyelesaikan beberapa urusan sekaligus, serta
+                    dapat melatih kecepatan dalam berpikir.</p>
+        </div>
+    </div>
+    <div class="haki">
+        <center>
+            Hak cipta safira
+        </center>
+    </div>
+</body>
+</html>
